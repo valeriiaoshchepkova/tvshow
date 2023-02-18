@@ -89,3 +89,25 @@ ul{
 /*font-family: 'Lemon', cursive;
 font-family: 'Marcellus', serif;
 font-family: 'Poppins', sans-serif;*/
+
+
+
+.icon-list {
+    display: flex;
+    gap: 75px;
+}
+
+.header-icon {
+   fill: currentColor;
+
+}
+
+.icon-link {
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: 3000ms;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.icon-link:is(:hover, :focus) {
+    color: rgba(50, 108, 255, 1);
+}
