@@ -111,3 +111,60 @@ font-family: 'Poppins', sans-serif;*/
 .icon-link:is(:hover, :focus) {
     color: rgba(50, 108, 255, 1);
 }
+
+
+.button-watch{
+    width: 141px;
+    height: 50px;
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    box-shadow: 0px 4px 50px rgba(50, 108, 255, 0.5);
+    border-radius: 100px;
+    -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+
+.swing-top-fwd {
+    -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+    animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+@-webkit-keyframes swing-top-fwd {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
+
+@keyframes swing-top-fwd {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+    }
+}
